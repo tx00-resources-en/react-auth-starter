@@ -31,27 +31,27 @@ const SignupComponent = ({ setIsAuthenticated }) => {
   };
 
   return (
-    <div>
-      <h2>Signup</h2>
+    <div className="form-container">
+      <h2>Sign Up</h2>
       <label>
-        email:
+        Email:
         <input
-          type="text"
+          type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter your email"
         />
       </label>
-      <br />
       <label>
         Password:
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          placeholder="Enter your password"
         />
       </label>
-      <br />
-      <button onClick={handleSignup}>Sign Up</button>
+      <button className="signup-button" onClick={handleSignup}>Sign Up</button>
     </div>
   );
 };

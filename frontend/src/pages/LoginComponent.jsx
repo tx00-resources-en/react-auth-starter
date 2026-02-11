@@ -15,27 +15,27 @@ const LoginComponent = ({ setIsAuthenticated }) => {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <h2>Login</h2>
       <label>
-        Username:
+        Email:
         <input
-          type="text"
+          type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter your email"
         />
       </label>
-      <br />
       <label>
         Password:
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          placeholder="Enter your password"
         />
       </label>
-      <br />
-      <button onClick={handleLogin}>Log In</button>
+      <button className="login-button" onClick={handleLogin}>Log In</button>
     </div>
   );
 };

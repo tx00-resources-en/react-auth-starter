@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div>
+    <main>
       <h2>Welcome to Our Website</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo
@@ -11,11 +11,10 @@ function Home() {
         libero.
       </p>
       <img
-        src="https://placehold.co/400" // Replace with an actual image URL
+        src="https://placehold.co/400"
         alt="Placeholder"
-        style={{ maxWidth: "100%", height: "auto" }}
       />
-    </div>
+    </main>
   );
 }
 
