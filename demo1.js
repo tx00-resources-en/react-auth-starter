@@ -17,3 +17,4 @@ localStorage.clear();
 sessionStorage.setItem("username", "Rami");
 sessionStorage.getItem("username");
 sessionStorage.removeItem("username");
+

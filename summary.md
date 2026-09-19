@@ -610,3 +610,4 @@ User clicks "Log out"
   │    └─ Route "/" → redirected to "/signup"
   └─ If user refreshes: localStorage is empty → isAuthenticated = false 
 ```
+
